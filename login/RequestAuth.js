@@ -12,6 +12,7 @@ window.addEventListener('load', function() {
         }
 
         const username = document.getElementById('username').value;
+        const name = document.getElementById('name').value;
         //grab mac-address
         const params = new URLSearchParams(window.location.search);
         
