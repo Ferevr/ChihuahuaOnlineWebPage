@@ -17,23 +17,27 @@
 
     <div id="container">
         <form action="" id="login">
-            <div id="toplabel">
+            <div class="form-group">
                 <label for="name" id="addresslabel">Nombre:</label>
+                <input type="text" id="name" required><br>
             </div>
-            <input type="text" id="name" required><br>
-            <div id="toplabel">
-                <label for="username" id="addresslabel">Correo Electrónico:</label>
+    
+            <div class="form-group"">
+                    <label for=" username">Correo Electrónico:</label>
+                <input type="mail" id="username" required><br>
             </div>
-            <input type="mail" id="username" required><br>
+    
             <div class="checkboxContainer">
-                <input type="checkbox" name="" id="terms" required>
-                <label for="terms">Entiendo, estoy de acuerdo y acepto los términos <a href="#">del contrato del usuario</a> y <a href="#">Política de Privacidad.</a></label>
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Entiendo, estoy de acuerdo y acepto los términos <a href="#">del contrato del usuario</a>
+                    y <a href="#">Política de Privacidad.</a></label>
             </div>
+    
             <button type="submit">CONECTAR A INTERNET</button>
         </form>
     </div>
 
-
+ 
     <div id="msg"></div>
 </body>
 
@@ -41,5 +45,6 @@
     <div id="footer">
         <img src="Resources/ESCUDO_Blanco-Horizontal.png" alt="">
     </div>
-</footer>    
+</footer>
+
 </html>

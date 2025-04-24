@@ -1,115 +1,163 @@
-html{
+html {
     background-image: url('Resources/FondoHotspotChihuahuaOnline.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: sans-serif;
 }
 
-h1{
-    text-align: center;
-    color: #ffffff;
-    font: bold 200px;
-    
-}
-
-input{
-    width: 90%;
-    height: 20px ;
+input {
+    width: 100%;
+    height: 30px;
     background-color: #ffffff;
     border: 1px solid rgb(225, 225, 225);
     border-radius: 2px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-#container{
+#container {
     border-radius: 5px;
     border: 1px solid #000000;
-    width: 400px;
-    height: auto;
     margin: 5% auto;
+    width: 40%;
+    min-width: 300px;
     background-color: rgb(255, 255, 255);
-    opacity: 0.8;
+    opacity: 0.9;
+    padding: 30px 20px;
+    box-sizing: border-box;
 }
 
-#login{
+#login {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
-input, button{
+input,
+button {
     margin-bottom: 20px;
 }
 
-#logo{
+button {
+    margin-top: 20px;
+}
+
+#logo {
     width: 250px;
     height: auto;
 }
 
-#imgContainer{
+#imgContainer {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#terms{
-    width: 10%;
-    transform: scale(0.7);
-    margin-top: 10px;
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0 10px;
 }
 
-.checkboxContainer{
-    display: flex;
-    align-items: center;
-    gap: 0px;
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#terms {
+    transform: scale(0.8);
+    margin-top: 5px;
+    content: 10px;
+}
+
+.checkboxContainer {
+    gap: 5px; 
+    padding: 0 10px;
     margin-bottom: 15px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.4;
+    content: center;
+    align-self: center;
 }
 
-.checkboxContainer label{
+.checkboxContainer label {
     font-size: 13px;
     cursor: pointer;
-    text-align: left;
-    
+    line-height: 1.4;
 }
 
-label a{
+label a {
     color: rgb(255, 0, 111);
     text-decoration: none;
 }
 
-#addresslabel{
-    font-size: 16px;
-    color: #000000;
-    text-align: left;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-weight: bold;
-    
-}
-
-#toplabel{
-    width: 100%;
-    text-align: left
-}
-
-button{
-    scale: 2;
+button {
+    transform: scale(1.2);
     border-radius: 5px;
     background-color: rgb(255, 0, 140);
     border: none;
     color: #ffffff;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bold;
-    height: 20px;
-    margin-top: 30px;
+    height: 30px;
+    padding: 5px 20px;
+    cursor: pointer;
 }
 
-#footer{
+#footer {
     text-align: center;
-    position: static;
+    margin-top: 50px;
 }
 
-#footer img{
+#footer img {
     width: 25%;
     height: auto;
-    margin-top: 100px;
+    max-width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        width: 80%;
+    }
+
+    .checkboxContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        transform: scale(1);
+        font-size: 14px;
+        height: auto;
+        width: 100%;
+    }
+
+    #footer img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        width: 90%;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    .form-group {
+        padding: 0 5px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
 }
