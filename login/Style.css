@@ -1,0 +1,115 @@
+html{
+    background-image: url('Resources/FondoHotspotChihuahuaOnline.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    font: bold 200px;
+    
+}
+
+input{
+    width: 90%;
+    height: 20px ;
+    background-color: #ffffff;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 2px;
+}
+
+#container{
+    border-radius: 5px;
+    border: 1px solid #000000;
+    width: 400px;
+    height: auto;
+    margin: 5% auto;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+#login{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+input, button{
+    margin-bottom: 20px;
+}
+
+#logo{
+    width: 250px;
+    height: auto;
+}
+
+#imgContainer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#terms{
+    width: 10%;
+    transform: scale(0.7);
+    margin-top: 10px;
+}
+
+.checkboxContainer{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 15px;
+}
+
+.checkboxContainer label{
+    font-size: 13px;
+    cursor: pointer;
+    text-align: left;
+    
+}
+
+label a{
+    color: rgb(255, 0, 111);
+    text-decoration: none;
+}
+
+#addresslabel{
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    
+}
+
+#toplabel{
+    width: 100%;
+    text-align: left
+}
+
+button{
+    scale: 2;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 140);
+    border: none;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: bold;
+    height: 20px;
+    margin-top: 30px;
+}
+
+#footer{
+    text-align: center;
+    position: static;
+}
+
+#footer img{
+    width: 25%;
+    height: auto;
+    margin-top: 100px;
+}
