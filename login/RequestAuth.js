@@ -24,7 +24,7 @@ window.addEventListener('load', function() {
         const response = await fetch('/api/login/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username, password })
+            body: JSON.stringify({ name, username, password })
         });
 
         const data = await response.json();
