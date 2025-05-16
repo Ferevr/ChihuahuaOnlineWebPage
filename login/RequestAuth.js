@@ -31,7 +31,7 @@ window.addEventListener('load', function () {
 
         try {
             //Mandar solicitud a la API de login
-            const response = await fetch('/api/login/', {
+            const response = await fetch('/api/api/login/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, username, password })
